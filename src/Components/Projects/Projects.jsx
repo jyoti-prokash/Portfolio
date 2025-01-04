@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import project1Image from "../../assets/projects/projects1.png";
 import project2Image from "../../assets/projects/projects2.png";
-import project3Image from "../../assets/projects/Screenshot 2025-01-04 015849.png";
+import project3Image from "../../assets/projects/discountPro.png";
 
 const projects = [
   {
@@ -32,15 +32,16 @@ const projects = [
       "Developing this app involved handling backend API integration and implementing secure user authentication. The main challenge was ensuring data security. Future improvements include adding more payment options and enhancing the UI.",
   },
   {
-    name: "Blog Platform",
+    name: "Discount web Platform",
     image: project3Image,
-    description: "A dynamic blog platform with a content management system.",
+    description: "A discount coupon collection platform with a content management system.",
     briefDescription: "A place to share thoughts and ideas.",
     techStack: "React, Express, MongoDB",
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example",
+    liveLink: "https://discount-pro-400e4.web.app/",
+    githubLink:
+      "https://github.com/programming-hero-web-course1/b10-a9-authentication-jyoti-prokash?tab=readme-ov-file",
     details:
-      "Building this platform taught me about CRUD operations and managing a database. The challenge was to implement efficient search functionality. Future improvements include adding user comments and social sharing options.",
+      "Building this platform taught me about react routing operations. The challenge was to implement efficient search functionality. Future improvements include adding user comments and social sharing options.",
   },
 ];
 
@@ -56,12 +57,17 @@ const MyProjects = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-16" id="projects">
+    <section className="bg-gray-900 text-white py-16 flex justify-center items-center" id="projects">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6 text-purple-500">My Projects</h2>
-        <p className="mb-12 text-gray-400">
-          Here are some of the best projects I've worked on, showcasing my
-          skills and passion for web development.
+        <p className="mb-12 text-gray-400 w-4/6 mx-auto lg:text-xl">
+          Here are some of the projects I've worked on that showcase my skills
+          in frontend and backend development. From creating responsive user
+          interfaces to building full-stack applications, these projects reflect
+          my passion for crafting modern, efficient, and scalable web solutions.
+          Each project highlights my ability to solve problems, write clean
+          code, and continuously learn new technologies. Explore my work to see
+          how I bring ideas to life with code!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

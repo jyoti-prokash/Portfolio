@@ -1,25 +1,50 @@
 import React from 'react';
-import Theme from '../../Theme/Theme';
 import './Navbar.css'
+import {
+  Link,
+  animateScroll as scroll,
+} from "react-scroll";
 const Navbar = () => {
     const links = (
       <>
         <li>
-          <a>Home</a>
+          <Link to='home'>Home</Link>
         </li>
         <li>
-          <a>About</a>
+          <Link
+            to="about"
+            smooth={true}
+            duration={1000}
+            className="cursor-pointer"
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a>Projects</a>
+          <Link
+            to="projects"
+            activeClass="active"
+            smooth={true}
+            duration={800}
+            className="cursor-pointer"
+          >
+            Projects
+          </Link>
         </li>
         <li>
-          <a>Contact</a>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+            className="cursor-pointer"
+          >
+            Contact
+          </Link>
         </li>
       </>
     );
     return (
-      <div className="navbar bg-base-100 sticky top-2 container mx-auto">
+      <div id="home" className="navbar bg-gray-900 py-5 lg:px-20 text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,21 +65,25 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-purple-950 rounded-box z-[1] mt-3 w-64 p-2 shadow"
             >
               {links}
             </ul>
           </div>
-          <a className="text-xl">Jyoti Prokash</a>
+          <a className="text-2xl font-bold">Jyoti Prokash</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <section className='mr-5'>
-            <Theme></Theme>
-          </section>
-          <a className="btn">Hire Me!</a>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+            className="cursor-pointer btn btn-outline text-[#814CEC] hover:bg-[#814CEC] rounded-3xl text-xl px-5"
+          >
+            Hire Me!
+          </Link>
         </div>
       </div>
     );

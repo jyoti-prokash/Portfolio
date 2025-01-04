@@ -35,7 +35,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F6F3FC] flex items-center justify-center">
+    <div
+      id="contact"
+      className="min-h-screen bg-[#F6F3FC] flex items-center justify-center"
+    >
       <section className="p-10 max-w-7xl w-full grid md:grid-cols-2 lg:gap-20 gap-10 items-center">
         {/* Right Section - Form */}
         <form
@@ -95,19 +98,25 @@ const Contact = () => {
               <div className="rounded-full">
                 <img className="w-10" src={callIcon} alt="callIcon" />
               </div>
-              <p className="text-gray-700">Phone: +8801746153493</p>
+              <p className="text-gray-700 text-xl hover:text-[#3A1F71] font-semibold">
+                Phone: +8801746153493
+              </p>
             </div>
             <div className="flex items-center space-x-4">
               <div className="rounded-full">
                 <img className="w-10" src={mailIcon} alt="mailIcon" />
               </div>
-              <p className="text-gray-700">Email: jyotiprokash@gmail.com</p>
+              <p className="text-gray-700 text-xl hover:text-[#3A1F71] font-semibold">
+                Email: jyotiprokash@gmail.com
+              </p>
             </div>
             <div className="flex items-center space-x-4">
               <div className="rounded-full">
                 <img className="w-10" src={locationIcon} alt="callIcon" />
               </div>
-              <p className="text-gray-700">Address: Dhaka, Bangladesh</p>
+              <p className="text-gray-700 text-xl hover:text-[#3A1F71] font-semibold">
+                Address: Dhaka, Bangladesh
+              </p>
             </div>
           </div>
         </div>
