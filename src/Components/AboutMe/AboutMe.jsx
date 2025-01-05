@@ -11,7 +11,7 @@ const AboutMe = () => {
       <div className="hero min-h-screen bg-gray-900">
         <div className="hero-content flex-col lg:flex-row gap-10">
           <img
-            data-aos="fade-right"
+            data-aos="zoom-in-up"
             src={profile}
             alt="jyoti prokash"
             className="max-w-sm rounded-lg shadow-2xl"
@@ -19,7 +19,7 @@ const AboutMe = () => {
           {/* Text Section */}
           <div
             className="flex flex-col md:flex-row items-center justify-center gap-6"
-            data-aos="fade-left"
+            data-aos="zoom-in"
           >
             {/* About Me Card */}
             <div className="bg-gray-800 rounded-lg shadow-lg p-6 md:w-1/2">

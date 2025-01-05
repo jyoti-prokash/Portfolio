@@ -6,7 +6,7 @@ import TypeScript from './TypeScript';
 
 const Hero = () => {
     return (
-      <div>
+      <div id="home">
         <div className="hero min-h-screen bg-[#171e24]">
           <div className="hero-content flex-col lg:flex-row-reverse justify-between">
             {/* profile  */}
@@ -36,8 +36,8 @@ const Hero = () => {
               <section className="mb-10">
                 <TypeScript></TypeScript>
               </section>
-              <div className="flex gap-10 mt-5">
-                <div className='w-52'>
+              <div className="md:flex gap-10 mt-5 ">
+                <div className="w-52">
                   <a
                     href="https://drive.google.com/file/d/1VBIwh_7fmUczyhvXFF_dVwT2FpTB5uEq/view?usp=drive_link"
                     target="_blank"
@@ -51,7 +51,7 @@ const Hero = () => {
                     </button>
                   </a>
                 </div>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 mt-5 md:mt-0">
                   {/* Twitter Icon */}
                   <div className="group rounded-full border-2 border-purple-500 p-3 hover:bg-purple-500 transition-all duration-300 ease-in-out">
                     <a

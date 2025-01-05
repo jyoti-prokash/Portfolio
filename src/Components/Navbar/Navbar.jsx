@@ -44,7 +44,7 @@ const Navbar = () => {
       </>
     );
     return (
-      <div id="home" className="navbar bg-gray-900 py-5 lg:px-20 text-white fixed z-50 bg-opacity-70">
+      <div className="navbar bg-gray-900 py-5 text-white fixed z-50 bg-opacity-70">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -80,7 +80,7 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={1000}
-            className="cursor-pointer btn btn-outline text-[#814CEC] hover:bg-[#814CEC] rounded-3xl text-xl px-5"
+            className="cursor-pointer btn btn-outline text-[#814CEC] hover:bg-[#814CEC] rounded-3xl text-xl"
           >
             Hire Me!
           </Link>
