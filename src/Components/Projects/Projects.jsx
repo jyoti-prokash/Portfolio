@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import project1Image from "../../assets/projects/projects1.png";
 import project2Image from "../../assets/projects/projects2.png";
 import project3Image from "../../assets/projects/discountPro.png";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const projects = [
   {
@@ -55,9 +57,14 @@ const MyProjects = () => {
   const handleCloseModal = () => {
     setSelectedProject(null);
   };
-
+  useEffect(() => {
+    AOS.init({ duration: "2000", delay: "100" });
+  }, []);
   return (
-    <section className="bg-gray-900 text-white py-16 flex justify-center items-center" id="projects">
+    <section
+      className="bg-gray-900 text-white py-16 flex justify-center items-center"
+      id="projects"
+    >
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6 text-purple-500">My Projects</h2>
         <p className="mb-12 text-gray-400 w-4/6 mx-auto lg:text-xl">
@@ -75,6 +82,7 @@ const MyProjects = () => {
             <div
               key={index}
               className="bg-black p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-transform hover:scale-105 relative"
+              data-aos="zoom-in"
             >
               <img
                 src={project.image}

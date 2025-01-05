@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import callIcon from "../../assets/contactIcon/telephone (1).png";
 import mailIcon from "../../assets/contactIcon/mail (1).png";
 import locationIcon from "../../assets/contactIcon/location.png";
@@ -33,7 +34,9 @@ const Contact = () => {
         }
       );
   };
-
+  useEffect(() => {
+    AOS.init({ duration: "2000", delay: "100" });
+  }, []);
   return (
     <div
       id="contact"
@@ -45,6 +48,7 @@ const Contact = () => {
           ref={form}
           onSubmit={sendEmail}
           className="space-y-6 bg-white p-10 rounded-2xl"
+          data-aos="fade-right"
         >
           <h2 className="text-4xl font-bold text-purple-700">
             Let’s work together!
@@ -92,7 +96,7 @@ const Contact = () => {
           </button>
         </form>
         {/* Left Section */}
-        <div>
+        <div data-aos="fade-left">
           <div className="mt-8 space-y-6">
             <div className="flex items-center space-x-4">
               <div className="rounded-full">

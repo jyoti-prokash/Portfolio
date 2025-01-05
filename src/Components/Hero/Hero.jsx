@@ -19,7 +19,7 @@ const Hero = () => {
               {/* Profile Image */}
               <div className="relative group">
                 <img
-                  className="rounded-full w-[330px] h-[330px] object-cover border-2 border-white shadow-xl group-hover:scale-105 transition-transform duration-800"
+                  className="rounded-full w-[330px] h-[330px] object-cover border-2 border-white shadow-xl group-hover:scale-105 transition-transform duration-800 mt-24 lg:mt-0"
                   src={profile}
                   alt="Jyoti Prokash"
                 />
