@@ -64,7 +64,7 @@ const Contact = () => {
             <input
               type="email"
               required
-              name="from_email"
+              name="email"
               placeholder="Email address"
               className="w-full p-3 rounded-lg border border-[#442582]"
             />
