@@ -39,12 +39,12 @@ const Hero = () => {
               <div className="md:flex gap-10 mt-5 ">
                 <div className="w-52">
                   <a
-                    href="https://drive.google.com/file/d/1VBIwh_7fmUczyhvXFF_dVwT2FpTB5uEq/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1hJrwVnod1wZH4pGBUD9PrSN6BjNKvvoc/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button className="btn btn-outline text-white hover:bg-[#814CEC] rounded-3xl text-xl px-5">
-                      Download CV{" "}
+                      Resume{" "}
                       <span>
                         <FiDownload />
                       </span>
