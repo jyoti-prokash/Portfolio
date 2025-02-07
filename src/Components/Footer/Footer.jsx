@@ -1,12 +1,15 @@
 import React from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import logo from '../../assets/profile/logo.png'
 
 const Footer = () => {
     return (
       <div className="bg-gray-900 ">
         <div className="text-center text-white space-y-6 p-20">
-          <h1 className="text-3xl font-bold">Jyoti Prokash</h1>
+          <div className='text-center items-center mx-auto'>
+            <img className="w-16 rounded-full scale-150" src={logo} alt="" />
+          </div>
           <ul className="flex items-center justify-center gap-10 text-xl font-semibold">
             <li>
               <Link
@@ -50,9 +53,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='flex gap-20 justify-center items-center pb-10'>
+        <div className="flex gap-20 justify-center items-center pb-10">
           <div>
-            <p className='text-white'>
+            <p className="text-white">
               <span className="text-gray-500">
                 © 2025 All rights reserved by
               </span>{" "}

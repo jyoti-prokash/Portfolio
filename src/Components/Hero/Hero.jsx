@@ -29,17 +29,23 @@ const Hero = () => {
             <div className="flex-1">
               <h2 className="text-3xl leading-tight lg:text-4xl my-5 text-[#ffff] font-bold">
                 HELLO I'M <br />{" "}
-                <span className="font-black text-[90px] leading-tight">
+                <span className="font-black text-[80px] leading-tight">
                   Jyoti Prokash
                 </span>
               </h2>
               <section className="mb-10">
                 <TypeScript></TypeScript>
               </section>
+              <p className='text-white font-semibold'>
+                A passionate Frontend Developer from
+                Bangladesh, specializing in React.js, Tailwind CSS, and the MERN
+                stack. I love crafting modern, responsive, and user-friendly web
+                applications that provide seamless experiences.
+              </p>
               <div className="md:flex gap-10 mt-5 ">
                 <div className="w-52">
                   <a
-                    href="https://drive.google.com/file/d/1hJrwVnod1wZH4pGBUD9PrSN6BjNKvvoc/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1pXUQCMRpwuVnFQqdjbNLp-uSEHiGIC2I/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

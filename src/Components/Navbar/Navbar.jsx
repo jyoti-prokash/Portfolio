@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css'
+import logo from '../../assets/profile/logo.png'
 import {
   Link,
   animateScroll as scroll,
@@ -8,7 +9,7 @@ const Navbar = () => {
     const links = (
       <>
         <li>
-          <Link to='home'>Home</Link>
+          <Link to="home">Home</Link>
         </li>
         <li>
           <Link
@@ -29,6 +30,17 @@ const Navbar = () => {
             className="cursor-pointer"
           >
             Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="skills"
+            activeClass="active"
+            smooth={true}
+            duration={800}
+            className="cursor-pointer"
+          >
+            Skills
           </Link>
         </li>
         <li>
@@ -70,7 +82,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="text-2xl font-bold">Jyoti Prokash</a>
+          <img className='w-16 rounded-full scale-150' src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>

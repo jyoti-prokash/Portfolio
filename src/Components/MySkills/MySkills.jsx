@@ -10,21 +10,24 @@ import firebase from '../../assets/icons/firebase.svg'
 import Marquee from "react-fast-marquee";
 const MySkills = () => {
     const skills = [
-      { name: "HTML", percentage: "90%", icon: html },
-      { name: "CSS3", percentage: "90%", icon: css },
-      { name: "Tailwind", percentage: "90%", icon: tailwind },
-      { name: "JavaScript", percentage: "80%", icon: javascript },
-      { name: "ReactJS", percentage: "80%", icon: react },
-      { name: "firebase", percentage: "80%", icon: firebase },
-      { name: "NodeJS", percentage: "75%", icon: nodejs },
-      { name: "MongoDB", percentage: "70%", icon: mongodb },
+      { name: "HTML", icon: html },
+      { name: "CSS3", icon: css },
+      { name: "Tailwind", icon: tailwind },
+      { name: "JavaScript", icon: javascript },
+      { name: "ReactJS", icon: react },
+      { name: "firebase", icon: firebase },
+      { name: "NodeJS", icon: nodejs },
+      { name: "MongoDB", icon: mongodb },
     ];
 
     return (
-      <section id='skills' className="bg-[#171e24] text-white py-16 min-h-screen justify-center items-center flex">
+      <section
+        id="skills"
+        className="bg-[#171e24] text-white py-16 min-h-screen justify-center items-center flex"
+      >
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-purple-500">
-            My Soft Skills
+            My Technical Skills
           </h2>
           <p className="lg:text-xl mb-12 text-gray-400 mx-auto lg:w-4/6">
             I am a highly motivated Frontend Developer with a solid foundation
@@ -51,9 +54,6 @@ const MySkills = () => {
                   <h3 className="text-2xl font-semibold text-white mb-2">
                     {skill.name}
                   </h3>
-                  <p className="text-purple-400 text-lg font-bold">
-                    {skill.percentage}
-                  </p>
                 </div>
               ))}
             </div>
