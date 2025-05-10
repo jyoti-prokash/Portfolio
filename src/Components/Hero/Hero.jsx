@@ -30,7 +30,7 @@ const Hero = () => {
               <h2 className="text-3xl leading-tight lg:text-4xl my-5 text-[#ffff] font-bold">
                 HELLO I'M <br />{" "}
                 <span className="font-black text-[80px] leading-tight">
-                  Jyoti Prokash
+                  Jyoti Prokash Chakma
                 </span>
               </h2>
               <section className="mb-10">
